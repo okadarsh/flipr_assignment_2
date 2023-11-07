@@ -1,0 +1,136 @@
+.App {
+  max-width: 80%;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  margin: 15px 0;
+}
+
+form {
+  min-width: 60%;
+  background: rgba(255, 255, 255, 0.307);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-bottom: solid 1.5px rgb(22, 20, 20);
+  margin-bottom: 10px;
+  background: none;
+  color: rgb(22, 20, 20);
+}
+
+input::placeholder {
+  color: rgb(22, 20, 20);
+  letter-spacing: 1.5px;
+}
+
+select {
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  margin: 0 10px;
+  background: none;
+}
+
+button {
+  appearance: button;
+  background-color: #1652f0;
+  border: 1px solid #1652f0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Graphik, -apple-system, system-ui, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  background-color: #0a46e4;
+  border-color: #0a46e4;
+}
+
+button:active {
+  background-color: #0039d7;
+  border-color: #0039d7;
+}
+
+.checkbox-wrapper-18 .round {
+  position: relative;
+}
+
+.checkbox-wrapper-18 .round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  width: 28px;
+  display: block;
+}
+
+.checkbox-wrapper-18 .round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 8px;
+  opacity: 0;
+  position: absolute;
+  top: 9px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.checkbox-wrapper-18 .round input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+
+.checkbox-wrapper-18 .round input[type="checkbox"]:checked + label {
+  background-color: #24a12b;
+  border-color: #32bd39;
+}
+
+.checkbox-wrapper-18 .round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
